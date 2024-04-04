@@ -38,7 +38,7 @@ const Home = () => {
 
   return (
     <Container>
-<SearchBar/>
+<SearchBar/>AAAAA
       <Grid container spacing={2}>
         {dataPokemon.map(pokemon => (
           <Grid item key={pokemon.name} xs={12} lg={4}>
