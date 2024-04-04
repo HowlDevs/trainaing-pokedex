@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { Container,Grid } from '@mui/material';
 import axios from 'axios';
 import CardPokemon from '../common-components/card-component';
+import SearchBar from '../common-components/search-component';
 
 const homeViewer = () => {
   const [dataPokemon, setDataPokemon] = React.useState([]);
@@ -37,8 +38,7 @@ const Home = () => {
 
   return (
     <Container>
-    {/* Renderizar los datos de los pokemones */}
-      {/* Renderizar los datos de los pokemones */}
+<SearchBar/>
       <Grid container spacing={2}>
         {dataPokemon.map(pokemon => (
           <Grid item key={pokemon.name} xs={12} lg={4}>
